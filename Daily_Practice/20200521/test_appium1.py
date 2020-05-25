@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/5/21 7:14 下午
 # @Author  : https://github.com/yyc2644
-# @File    : appium_test1.py
+# @File    : test_appium1.py
 # @Software: PyCharm
 from time import sleep
 from  appium import webdriver

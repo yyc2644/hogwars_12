@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/5/22 8:12 下午
 # @Author  : https://github.com/yyc2644
-# @File    : base.py
+# @File    : test_base.py
 # @Software: PyCharm
 from selenium import webdriver
 
@@ -14,3 +14,4 @@ class Base():
 
     def Teardown(self):
         self.driver.quit()
+

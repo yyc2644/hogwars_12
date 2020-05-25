@@ -8,8 +8,6 @@
 import selenium
 from selenium import webdriver
 from time import sleep
-
-
 # Chromedriver文件放在/usr/local/bin中，不需要配再单独配置环境变量了
 from selenium.webdriver import ActionChains
 
@@ -39,6 +37,7 @@ class TestSelenium2:
 
     def teardown(self):
         self.driver.quit()
+
     def test_content(self):
         self.driver.get("http://sahitest.com/demo/clicks.htm")
         element_click=self.driver.find_element_by_xpath("/html/body/form/input[3]")
