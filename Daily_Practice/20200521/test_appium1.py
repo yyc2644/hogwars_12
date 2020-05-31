@@ -5,8 +5,7 @@
 # @File    : test_appium1.py
 # @Software: PyCharm
 from time import sleep
-from  appium import webdriver
-
+from appium import webdriver
 
 desired_caps = {}
 desired_caps['platformName'] = 'Android'

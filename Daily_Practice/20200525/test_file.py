@@ -5,14 +5,13 @@
 # @File    : test_js.py
 # @Software: PyCharm
 import time
-
 from selenium import webdriver
 
 
 class Testbaidulogin:
     def setup(self):
         self.driver = webdriver.Chrome()
-        self.driver.implicitly_wait(15)
+        self.driver.implicitly_wait(5)
         self.driver.maximize_window()
 
     def teardown(self):
@@ -20,12 +19,10 @@ class Testbaidulogin:
 
     def test_windows(self):
         # pass
-        self.driver.get("https://www.12306.cn/index/")
-        self.driver.execute_script(
-            "a=document.getElementById('train_date');"
-            "a.removeAttribute('readonly');"
-            "a.value=20190513")
-        time.sleep(5)
+        self.driver.get("https://image.baidu.com")
+        self.driver.find_element_by_id("sttb").click()
+        self.driver.find_element_by_id("stfile").send_keys("/Users/yicheng/Desktop/1.png")
+        time.sleep(10)
 
         # # self.driver.find_element_by_link_text("登陆").click()
         # self.driver.find_element_by_link_text("登录").click()

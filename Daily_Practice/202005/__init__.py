@@ -4,3 +4,5 @@
 # @Author  : https://github.com/yyc2644
 # @File    : __init__.py.py
 # @Software: PyCharm
+
+#集合篇，appium+selenium+po
