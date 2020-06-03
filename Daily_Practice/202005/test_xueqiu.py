@@ -25,7 +25,7 @@ class TestXueqiu:
 
     def teardown(self):
         print("teardown")
-        self.driver.quit()
+        # self.driver.quit()
 
     def testSearch(self):
         el1 = self.driver.find_element(MobileBy.ID, "com.xueqiu.android:id/tv_search")

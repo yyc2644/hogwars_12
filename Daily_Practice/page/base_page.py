@@ -12,7 +12,7 @@ class BasePage:
     _driver: WebDriver
 
     def __init__(self, driver: WebDriver = None):
-        _driver = driver
+        self._driver = driver
 
     def find(self, locator, value):
-        self._driver.find_element(locator, value)
+        self._driver.find_element(locator, value).cl
