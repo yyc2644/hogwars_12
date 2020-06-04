@@ -15,4 +15,4 @@ class BasePage:
         self._driver = driver
 
     def find(self, locator, value):
-        self._driver.find_element(locator, value).cl
+        return self._driver.find_element(locator, value)
